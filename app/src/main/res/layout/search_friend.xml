@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@xml/popbackground"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/red"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/search_friends_back"
+            style="@style/TitlebackImageView"/>
+
+        <EditText
+            android:id="@+id/search_friends_content"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:textColorHint="@color/white"
+            android:hint="@string/search_friends_Title" />
+
+        <ImageView
+            android:src="@mipmap/search"
+            android:id="@+id/search_friends_ok"
+            style="@style/TitlebackImageView"/>
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/search_friends_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </android.support.v7.widget.RecyclerView>
+
+</LinearLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:imagecontrol="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:background="@color/gravy" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.kaiyuanxueyuan.view.RoundImageView
+            android:id="@+id/search_friends_icon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:scaleType="centerCrop"
+            imagecontrol:border_inside_color="@color/white"
+            imagecontrol:border_outside_color="@color/white"
+            imagecontrol:border_thickness="2dp"
+            android:src="@mipmap/one"/>
+
+        <TextView
+            android:id="@+id/search_friends_user"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="关注的课程"
+            android:gravity="center|left" />
+
+        <Space
+            style="@style/MySpace" />
+
+        <Button
+            android:id="@+id/search_friends_add"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:text="加好友"
+            android:textColor="@color/green"
+            android:background="@xml/tip_text_background"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

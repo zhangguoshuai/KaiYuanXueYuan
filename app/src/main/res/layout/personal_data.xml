@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:imagecontrol="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@xml/popbackground"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/set_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/red"
+        android:orientation="horizontal"
+        >
+
+        <ImageView
+            android:id="@+id/personData_back"
+            style="@style/TitlebackImageView" />
+
+        <TextView
+            style="@style/TitleTextView"
+            android:text="@string/person_data_Title" />
+
+    </LinearLayout>
+
+    <com.kaiyuanxueyuan.view.MyScrollview
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/set_title">
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:padding="10dp"
+           android:orientation="vertical">
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="@dimen/person_data_height"
+               android:orientation="horizontal">
+
+               <TextView
+                   style="@style/SettingTextView"
+                   android:text="@string/person_data_TouXiang" />
+
+               <Space
+                   style="@style/MySpace"/>
+
+               <com.kaiyuanxueyuan.view.RoundImageView
+                   android:id="@+id/roundImage_two_border"
+                   android:layout_width="50dp"
+                   android:layout_height="50dp"
+                   android:scaleType="centerCrop"
+                   android:layout_gravity="center"
+                   imagecontrol:border_inside_color="#fff7f2e9"
+                   imagecontrol:border_outside_color="#ffd5d1c8"
+                   imagecontrol:border_thickness="2dp"
+                   android:src="@mipmap/one"/>
+
+               <ImageView
+                   style="@style/TiaoZhuanImageView"
+                   />
+
+           </LinearLayout>
+
+           <View
+               style="@style/OnLine"/>
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="@dimen/person_data_height"
+               android:orientation="horizontal">
+
+               <TextView
+                   style="@style/SettingTextView"
+                   android:text="@string/person_data_ZhiYe" />
+
+               <Space
+                   style="@style/MySpace"/>
+
+               <TextView
+                   style="@style/SettingTextView"
+                   android:text="@string/person_data_ZhiYe"
+                   android:textColor="@color/gravy" />
+
+               <ImageView
+                   style="@style/TiaoZhuanImageView"
+                   />
+
+           </LinearLayout>
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="@dimen/person_data_height"
+               android:orientation="horizontal">
+
+               <TextView
+                   style="@style/SettingTextView"
+                   android:text="@string/person_data_QianMing" />
+
+               <Space
+                   style="@style/MySpace"/>
+
+               <TextView
+                   style="@style/SettingTextView"
+                   android:text="@string/person_data_QianMing"
+                   android:textColor="@color/gravy" />
+
+               <ImageView
+                   style="@style/TiaoZhuanImageView"
+                   />
+
+           </LinearLayout>
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="@dimen/person_data_height"
+               android:orientation="horizontal">
+
+               <TextView
+                   style="@style/SettingTextView"
+                   android:text="@string/person_data_NiCheng"
+                   />
+
+               <Space
+                   style="@style/MySpace"/>
+
+               <TextView
+                   style="@style/SettingTextView"
+                   android:text="@string/person_data_NiCheng"
+                   android:textColor="@color/gravy" />
+
+               <ImageView
+                   style="@style/TiaoZhuanImageView"
+                   />
+
+           </LinearLayout>
+
+           <View
+               style="@style/OnLine"/>
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="@dimen/person_data_height"
+               android:orientation="horizontal">
+
+               <TextView
+                   style="@style/SettingTextView"
+                   android:text="@string/person_data_XingBie" />
+
+               <Space
+                   style="@style/MySpace"/>
+
+               <TextView
+                   style="@style/SettingTextView"
+                   android:text="@string/person_data_XingBie"
+                   android:textColor="@color/gravy" />
+
+               <ImageView
+                   style="@style/TiaoZhuanImageView"
+                   />
+
+           </LinearLayout>
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="@dimen/person_data_height"
+               android:orientation="horizontal">
+
+               <TextView
+                   style="@style/SettingTextView"
+                   android:text="@string/person_data_DiQu" />
+
+               <Space
+                   style="@style/MySpace"/>
+
+               <TextView
+                   style="@style/SettingTextView"
+                   android:text="@string/person_data_DiQu"
+                   android:textColor="@color/gravy" />
+
+               <ImageView
+                   style="@style/TiaoZhuanImageView"
+                   />
+
+           </LinearLayout>
+
+           <View
+               style="@style/OnLine"/>
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="@dimen/person_data_height"
+               android:orientation="horizontal">
+
+               <TextView
+                   style="@style/SettingTextView"
+                   android:text="@string/person_data_BangDingShouJi"
+                   android:textColor="@color/red" />
+
+               <Space
+                   style="@style/MySpace"/>
+
+               <TextView
+                   style="@style/SettingTextView"
+                   android:text="@string/person_data_DefaultDate"
+                   android:textColor="@color/gravy" />
+
+               <ImageView
+                   style="@style/TiaoZhuanImageView"
+                   />
+
+           </LinearLayout>
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="@dimen/person_data_height"
+               android:orientation="horizontal">
+
+               <TextView
+                   style="@style/SettingTextView"
+                   android:text="@string/person_data_BangDingYouXiang"
+                   android:textColor="@color/red" />
+
+               <Space
+                   style="@style/MySpace"/>
+
+               <TextView
+                   style="@style/SettingTextView"
+                   android:text="@string/person_data_DefaultDate"
+                   android:textColor="@color/gravy" />
+
+               <ImageView
+                   style="@style/TiaoZhuanImageView"
+                   />
+
+           </LinearLayout>
+
+       </LinearLayout>
+
+    </com.kaiyuanxueyuan.view.MyScrollview>
+
+</RelativeLayout>

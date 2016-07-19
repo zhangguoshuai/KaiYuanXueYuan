@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@xml/popbackground"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/red"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:padding="10dp"
+                android:id="@+id/user_login_close"
+                style="@style/TitlebackImageView"
+                android:src="@mipmap/close"/>
+
+            <TextView
+                style="@style/TitleTextView"
+                android:text="登录"/>
+
+            <Space
+                style="@style/MySpace" />
+
+            <TextView
+                android:id="@+id/user_login_register"
+                style="@style/TitleTextView"
+                android:paddingRight="10dp"
+                android:text="注册"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            android:padding="20dp"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.kaiyuanxueyuan.view.LineEditText
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:gravity="center|left"
+                    android:background="@null"
+                    android:hint="请输入手机号/邮箱"/>
+
+                <ImageView
+                    android:padding="8dp"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@mipmap/loginhistory"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.kaiyuanxueyuan.view.LineEditText
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:gravity="center|left"
+                    android:background="@null"
+                    android:hint="请输入密码"/>
+
+                <ImageView
+                    android:padding="10dp"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@mipmap/password"
+                    />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/red"
+                android:text="登录"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                />
+
+            <TextView
+                android:id="@+id/user_login_forget"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="忘记密码"
+                android:gravity="center"
+                android:padding="20dp"
+                android:textColor="@color/black"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="使用第三方登录"
+                android:gravity="center"
+                android:padding="20dp"
+                android:textColor="@color/gravy"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="60dp"
+                    android:src="@mipmap/weixin"/>
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="60dp"
+                    android:src="@mipmap/qq"/>
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="60dp"
+                    android:src="@mipmap/friends"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

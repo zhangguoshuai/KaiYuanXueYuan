@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="5dp"
+    >
+    <!--app:layout_behavior="@string/appbar_scrolling_view_behavior"-->
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dip"
+        android:background="@color/divide"/>
+
+    <TextView
+        android:id="@+id/article_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:padding="5dp"
+        android:text="标题"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/article_type"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:padding="5dp"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:text="归类"
+            />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="16sp"
+            android:text="阅读"
+            android:gravity="center"
+            android:padding="5dp"
+            />
+
+        <TextView
+            android:id="@+id/article_number"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="16sp"
+            android:text="人数"
+            android:gravity="center"
+            android:padding="5dp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/article_content"
+            android:layout_width="0dp"
+            android:layout_weight="8"
+            android:layout_height="match_parent"
+            android:textSize="16sp"
+            android:text="Java是一门面向对象编程语言，
+            不仅吸收了C++语言的各种优点，还摒弃了C++里难以
+            理解的多继承、指针等概念，因此Java语言具有功能
+            强大和简单易用两个特征。Java语言作为静态面向对
+            象编程语言的代表，极好地实现了面向对象理论，允
+            许程序员以优雅的思维方式进行复杂的编程"/>
+        <ImageView
+            android:id="@+id/article_picture"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/two"/>
+
+    </LinearLayout>
+
+</LinearLayout>
