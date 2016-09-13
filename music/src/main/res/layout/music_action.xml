@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#b0000000"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:background="@drawable/popbackground"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/music_action_list"
+            android:layout_width="match_parent"
+            android:layout_height="200dp">
+
+        </android.support.v7.widget.RecyclerView>
+
+        <com.dmplayer.childfragment.PageIndicatorView
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+        </com.dmplayer.childfragment.PageIndicatorView>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:imagecontrol="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@xml/popbackground"
+    android:paddingLeft="10dp"
+    android:orientation="vertical">
+
+    <com.kaiyuanxueyuan.view.MyScrollview
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/player_Details_Title"
+                    android:textSize="16sp"
+                    android:padding="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textColor="@color/green"
+                    android:text="@string/player_Details_Status"
+                    android:textSize="12sp"
+                    android:background="@xml/shape_finish"
+                    android:padding="3dp"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/player_Details_JieShao"
+                android:textSize="12sp"
+                android:padding="3dp"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:padding="5dp"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <com.kaiyuanxueyuan.view.RoundImageView
+                    android:id="@+id/roundImage_two_border"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:scaleType="centerCrop"
+                    imagecontrol:border_inside_color="#fff7f2e9"
+                    imagecontrol:border_outside_color="#ffd5d1c8"
+                    imagecontrol:border_thickness="2dp"
+                    android:src="@mipmap/one"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/player_Details_User"
+                    android:layout_gravity="center"
+                    android:textSize="16sp"
+                    android:padding="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/green"
+                    android:layout_gravity="center"
+                    android:text="@string/player_Details_Status"
+                    android:textSize="12sp"
+                    android:background="@xml/shape_finish"
+                    android:padding="3dp"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/player_Details_MyJieShao"
+                android:textSize="12sp"
+                android:padding="3dp"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:paddingRight="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/player_Details_AllClass"
+                    android:layout_gravity="center"
+                    android:textSize="16sp"
+                    android:padding="5dp"/>
+
+                <Space
+                    style="@style/MySpace" />
+
+                <ImageView
+                    android:layout_gravity="center"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@mipmap/indicate"
+                    />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:text="@string/player_Details_XiangGuangTuiJian"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/details_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </android.support.v7.widget.RecyclerView>
+
+        </LinearLayout>
+
+    </com.kaiyuanxueyuan.view.MyScrollview>
+
+</LinearLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/live_anchor_top"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/md_blue_500"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/live_anchor_back"
+            style="@style/TitlebackImageView" />
+
+        <TextView
+            android:id="@+id/live_anchor_name"
+            style="@style/TitleTextView"
+            android:text="@string/player_Title" />
+
+        <Space style="@style/MySpace" />
+
+        <ImageView
+            android:id="@+id/live_anchor_favorite"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:src="@mipmap/concernno" />
+
+        <ImageView
+            android:id="@+id/live_anchor_edit"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:src="@mipmap/edit" />
+
+    </LinearLayout>
+
+    <com.wuxiaolong.pullloadmorerecyclerview.PullLoadMoreRecyclerView
+        android:layout_below="@+id/live_anchor_top"
+        android:layout_margin="10dp"
+        android:id="@+id/live_anchor_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </com.wuxiaolong.pullloadmorerecyclerview.PullLoadMoreRecyclerView>
+
+</RelativeLayout>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@xml/popbackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@color/md_blue_500"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/study_video_back"
+                style="@style/TitlebackImageView" />
+
+            <TextView
+                style="@style/TitleTextView"
+                android:text="学习视频"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="特别推荐"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="@dimen/small_size"
+                />
+
+            <View
+                android:layout_width="2dip"
+                android:layout_height="20dp"
+                android:background="@color/blue"
+                android:layout_marginLeft="5dp"
+                android:layout_gravity="center"/>
+
+            <Space
+                style="@style/MySpace"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="筛选"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="@dimen/small_size"
+                />
+
+            <ImageView
+                android:id="@+id/study_video_screen"
+                android:padding="10dp"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:src="@mipmap/screen"/>
+
+
+        </LinearLayout>
+
+        <com.wuxiaolong.pullloadmorerecyclerview.PullLoadMoreRecyclerView
+            android:id="@+id/study_video_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </com.wuxiaolong.pullloadmorerecyclerview.PullLoadMoreRecyclerView>
+
+    </LinearLayout>
+
+</RelativeLayout>

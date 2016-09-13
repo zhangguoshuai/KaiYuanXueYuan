@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#bbf2f2ee"
+    xmlns:imagecontrol="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <com.wuxiaolong.pullloadmorerecyclerview.PullLoadMoreRecyclerView
+        android:layout_below="@+id/person_info"
+        android:id="@+id/person_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="10dp"
+        android:background="#ffffff"
+        android:id="@+id/person_info"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <com.kaiyuanxueyuan.view.RoundImageView
+            android:id="@+id/roundImage_two_border"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:scaleType="centerCrop"
+            android:padding="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center"
+            imagecontrol:border_inside_color="#fff7f2e9"
+            imagecontrol:border_outside_color="#ffd5d1c8"
+            imagecontrol:border_thickness="2dp"
+            android:src="@mipmap/one"/>
+
+        <Space
+            style="@style/MySpace" />
+
+        <TextView
+            android:layout_marginRight="20dp"
+            android:id="@+id/myInfo_login"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="5dp"
+            android:background="@xml/shape_login"
+            android:text="登录"
+            android:textColor="@color/blue"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

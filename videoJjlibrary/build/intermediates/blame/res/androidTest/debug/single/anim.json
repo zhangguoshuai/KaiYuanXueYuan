@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "D:\\AsDemo\\KaiYuanXueYuan\\videoJjlibrary\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\venvy_slide_out_bottom.xml",
+        "source": "D:\\AsDemo\\KaiYuanXueYuan\\videoJjlibrary\\build\\intermediates\\bundles\\debug\\res\\anim\\venvy_slide_out_bottom.xml"
+    },
+    {
+        "merged": "D:\\AsDemo\\KaiYuanXueYuan\\videoJjlibrary\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\venvy_slide_out_top.xml",
+        "source": "D:\\AsDemo\\KaiYuanXueYuan\\videoJjlibrary\\build\\intermediates\\bundles\\debug\\res\\anim\\venvy_slide_out_top.xml"
+    },
+    {
+        "merged": "D:\\AsDemo\\KaiYuanXueYuan\\videoJjlibrary\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\venvy_slide_in_bottom.xml",
+        "source": "D:\\AsDemo\\KaiYuanXueYuan\\videoJjlibrary\\build\\intermediates\\bundles\\debug\\res\\anim\\venvy_slide_in_bottom.xml"
+    },
+    {
+        "merged": "D:\\AsDemo\\KaiYuanXueYuan\\videoJjlibrary\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\venvy_slide_in_top.xml",
+        "source": "D:\\AsDemo\\KaiYuanXueYuan\\videoJjlibrary\\build\\intermediates\\bundles\\debug\\res\\anim\\venvy_slide_in_top.xml"
+    }
+]

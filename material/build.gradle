@@ -4,7 +4,7 @@ android {
     compileSdkVersion 24
     buildToolsVersion '24.0.0'
     defaultConfig {
-        minSdkVersion 9
+        minSdkVersion 16
         targetSdkVersion 24
         versionCode 21
         versionName "1.2.4"
@@ -25,7 +25,6 @@ ext{
 
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
-    testCompile 'junit:junit:4.12'
     compile "com.android.support:appcompat-v7:${libSupportVersion}"
     compile "com.android.support:cardview-v7:${libSupportVersion}"
     compile "com.android.support:recyclerview-v7:${libSupportVersion}"
